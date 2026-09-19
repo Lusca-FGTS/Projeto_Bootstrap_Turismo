@@ -15,6 +15,15 @@
             <a class="navbar-brand" href="#">
                 Viagens Únicas
             </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+    
+            <div class="collapse navbar-collapse"  id="menu">
+    
+                
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="#">
                     Início</a>
@@ -26,6 +35,8 @@
                     Feedbacks</a>
             </div>
         </div>
+    </div>
+
     </nav>
 
     <div id="carouselTurismo" class="carousel slide" data-bs-ride="carousel">
@@ -80,52 +91,167 @@
     <section class="container my-5">
         <h2 class="text-center"> Primeiras Aventuras: </h2>
         <p class="text-center">Aqui onde a adrenalina nunca acaba!</p>
-    </section>
 
 
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/1/Rio zam.jpg" class="card-img-top" alt="Zambezi">
-                    <div class="card-body">
-                        <h5 class="card-title">Rio Zambezi</h5>
-                        <span class="badge bg-warning">Aventura moderada</span>
-                        <p>Sinta o frescor do rio e as aventuras que te aguardam,
-                            então como dizia Thales de Mileto "A água é o princípio
-                            de todas as coisas."</p>
-                        <a href="#"><button class="btn btn-outline-primary">Mais infomações</button></a>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/1/Rio zam.jpg" class="card-img-top" alt="Zambezi">
+                        <div class="card-body">
+                            <h5 class="card-title">Rio Zambezi</h5>
+                            <span class="badge bg-warning">Aventura moderada</span>
+                            <p>Sinta o frescor do rio e as aventuras que te aguardam,
+                                então como dizia Thales de Mileto "A água é o princípio
+                                de todas as coisas."</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalzam">
+                                Mais Informações
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/1/Queen.jpg" class="card-img-top" alt="Queenstown">
-                    <div class="card-body">
-                        <h5 class="card-title">Queda Livre em Queenstown</h5>
-                        <span class="badge bg-danger">Aventura intensa</span>
-                        <p class="card-text">Seja livre e aproveite a liberdade de cair em Queenstown.
-                            "A vida é um bungee jump." — Atila C. Vaqueiro</p>
-                        <a href="#"><button class="btn btn-outline-primary">Mais infomações</button></a>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/1/Queen.jpg" class="card-img-top" alt="Queenstown">
+                        <div class="card-body">
+                            <h5 class="card-title">Queda Livre em Queenstown</h5>
+                            <span class="badge bg-danger">Aventura intensa</span>
+                            <p class="card-text">Seja livre e aproveite a liberdade de cair em
+                                Queenstown. "A vida é um bungee jump." — Atila C. Vaqueiro</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalqueen">
+                                Mais Informações
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/1/Duba i.jpg" class="card-img-top" alt="Dubai">
-                    <div class="card-body">
-                        <h5 class="card-title">Voando sobre Dubai</h5>
-                        <span class="badge bg-warning">Aventura moderada</span>
-                        <p class="card-text">Pule de paraquedas e pegue a brisa do ar. Aqui em Dubai a vida
-                            é vivida de forma única. "Viva la vida" - Glixinski</p>
-                        <a href="#"><button class="btn btn-outline-primary">Mais infomações</button></a>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/1/Duba i.jpg" class="card-img-top" alt="Dubai">
+                        <div class="card-body">
+                            <h5 class="card-title">Voando sobre Dubai</h5>
+                            <span class="badge bg-warning">Aventura moderada</span>
+                            <p class="card-text">Pule de paraquedas e pegue a brisa do ar.
+                                Aqui em Dubai a vida é vivida de forma única. "Viva la vida"
+                                - Glixinski</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modaldubai">
+                                Mais Informações
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
+        <div class="modal fade" id="modalzam">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Zambezi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalqueen">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Rio de Janeiro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Conheça as praias, paisagens e atrações do Rio de Janeiro.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modaldubai">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Rio de Janeiro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Conheça as praias, paisagens e atrações do Rio de Janeiro.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">
+            Perguntas Frequentes
+        </h2>
+        <div class="accordion" id="faq">
+        
+    <section>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#pergunta1">
+                    Qual o melhor período para viajar?
+                </button>
+            </h2>
+            <div id="pergunta1" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body">
+                    O melhor período depende do destino
+                    e das condições climáticas.
+                </div>
+            </div>
+        </div>
+    </section>
+<br>
+    <section>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#pergunta2">
+                    Qual o melhor período para viajar?
+                </button>
+            </h2>
+            <div id="pergunta2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body">
+                    O melhor período depende do destino
+                    e das condições climáticas.
+                </div>
+            </div>
+        </div>
+    </section>
+<br>
+    <section>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#pergunta3">
+                    Qual o melhor período para viajar?
+                </button>
+            </h2>
+            <div id="pergunta3" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body">
+                    O melhor período depende do destino
+                    e das condições climáticas.
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
     <div class="container my-5">
         <div class="alert alert-danger">
             Não esqueça se você está procurando por viagens mais leves verifiquem a classificação da aventura.
